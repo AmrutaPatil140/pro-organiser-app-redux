@@ -12,7 +12,7 @@ export default function App(){
         
      <BrowserRouter>
          <div>
-           <Navbar/> 
+           <Navbar/>
 
            <Switch>
             <Route path='/' exact component={Home}/>
