@@ -1,19 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react';
 import styles from './Navbar.module.css';
-import {NavLink,Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom'
 
-class Navbar extends Component {
-    render() {
-        return (
-            <header className={styles.header}>
-             <Link exact to='/' className={styles.headerh2} >Pro-Organizer</Link> 
-             <div className={styles.listCtr}>
-                 <NavLink exact to='/' className={styles.listItem} activeClassName={styles.active}>Home</NavLink>
-                 <NavLink to='/createboard' className={styles.listItem} activeClassName={styles.active}>Create a Board</NavLink>
-             </div> 
-            </header>
-        )
-    }
+const Navbar=()=>{
+    return(
+    <div className={styles.Navbar}>
+      <div id={styles.companyLogo}>Pro-Organizer </div>
+      <ul className={styles.NavMenu}>
+          <li className={styles.menuItem}><NavLink to='/' >Home</NavLink> </li>
+          <li className={styles.menuItem}> <NavLink to='/createboard'>Create a board </NavLink></li>
+      </ul>
+    </div>
+    )
 }
-
 export default Navbar;

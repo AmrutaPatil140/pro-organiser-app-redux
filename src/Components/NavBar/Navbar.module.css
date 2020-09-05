@@ -1,60 +1,35 @@
-.header{
-    background:linear-gradient(-90deg,#050402, #f8d040); 
-    width: 100%;
-    height: 100px;
-    border-bottom: 3px black solid;
-    color: white;
-    display: flex;
-    align-items: center;
- }
-.headerh2{
-    margin-left: 2rem;
-    width: 50%;
-    font-size: 2rem;
-    text-decoration: none;
-    color: white;
+.Navbar{
+    background-color: blue;
+   
+    font-size: 1.5em;
+    
+    padding: 20px 0px;
 }
-.headerh2:hover{
-    color: black;
+.NavMenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   display: flex;
+    justify-content:flex-end;
+    
+   
+
 }
-.listCtr{
-    width: 50%;
-    margin-left: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.menuItem{
+margin-right: 20px;
+background-color: blue;
+
+}
+.menuItem a{
+    color: white;
+
+    text-decoration:none;
 }
 
-.listItem{
-    text-decoration: none;
+#companyLogo{
+    
+    float: left;
+    /* line-height: 3.5; */
+    padding-left: 20px;
     color: white;
-    padding:0px 20px ;
-    max-height: 100px;
-    
-    
-}
-.active{
-   color: black;
-}
-@media only screen and (max-width:578px){
-    .headerh2{
-        margin-left: 1rem;
-        font-size: 1.5rem;
-    }
-    .listCtr{
-        flex-direction: column;
-        margin-left: 5rem;
-        font-size: 14px;
-    }
-}
-@media only screen and (min-width:579px)and (max-width:736px){
-    .headerh2{
-        margin-left: 1.5rem;
-        font-size: 1.5rem;
-    }
-    .listCtr{
-        flex-direction: column;
-        margin-left: 5rem;
-        font-size: 16px;
-    }
 }

@@ -1,23 +1,27 @@
-import React from 'react';
-import './App.css';
-import Navbar from './Components/NavBar/Navbar';
-import {Route} from 'react-router-dom';
-import CreateBoard from './Pages/CreateBoard/CreateBoard';
-import Home from './Pages/Home/Home';
+import React from 'react'
+import {BrowserRouter,Route, Switch} from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/home/Home';
+import CreateBoardForm from './components/createBoardForm/CreateBoardForm';
 
 
+export default function App(){
 
+    return(
+       
+        
+     <BrowserRouter>
+         <div>
+           <Navbar/> 
 
-function App() {
-  return (
-    <>
-      <Navbar/>
-      
-      <Route exact path='/' component={Home}/>
-      <Route path='/createboard' component={CreateBoard}/>
-      
-    </>
-  );
+           <Switch>
+            <Route path='/' exact component={Home}/>
+            <Route path='/createboard'  component={CreateBoardForm}/>
+           </Switch>
+            
+         </div>
+     </BrowserRouter>
+
+       
+    )
 }
-
-export default App;
