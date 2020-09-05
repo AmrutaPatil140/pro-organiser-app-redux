@@ -14,7 +14,6 @@ import {addNewBoard} from '../../ReusableFunctions/ReusableFunctions';
      }
    }
    
-    //Function to saveBoard in Database
       createBoardHandler=(e)=>{
       e.preventDefault();
       const{boardName,boardMembers,boardType}=this.state
